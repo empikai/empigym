@@ -1,0 +1,141 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+
+ section {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: url(asasa/fitness-equipment.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: animate 4s linear infinite;
+ }
+
+ @keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+ }
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    padding: 40px 90px;
+
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900 ;
+    letter-spacing: 1.5px;
+    
+}
+
+header .logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120x;
+    height: 120px;
+}
+
+header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 750;
+    letter-spacing: .5px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.2s;
+    transition-property: background;
+
+}
+
+header .nav a:not(:last-child) {
+    margin-right: 35px;
+}
+
+header .nav a:hover {
+    background: #3498db;
+}
+
+.content {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.content .info h2 {
+    color: #fff;
+    font-size: 95px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 100px;
+    margin-bottom: 25px;
+}
+
+.content .info p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.content .join {
+    color: #fff;
+    background: #3498db;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    border-radius: 7px; 
+    transition: 0.3s;
+    transition-property: background;
+}
+
+/* .content .join:hover{
+    background: #3498db;
+} */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icons a{
+    position: relative;
+    color: #3498db;
+    font-size: 30px;
+    transition: 0.2px;
+    transition-property: transform;
+
+}
+
+.icons a:not(:last-child) {
+    margin-right: 70px;
+}
+
+.icons a:hover {
+    transform: scale(2);
+}
+
